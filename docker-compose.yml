@@ -1,0 +1,141 @@
+version: '3.8'
+
+services:
+  # ==========================================
+  # 1. Apache Hadoop HDFS (NameNode & DataNode)
+  # ==========================================
+  namenode:
+    image: bde2020/hadoop-namenode:2.0.0-hadoop3.2.1-java8
+    container_name: cropshock_namenode
+    environment:
+      - CLUSTER_NAME=cropshock_hadoop_cluster
+    ports:
+      - "9870:9870"   # HDFS Web UI
+      - "9000:9000"   # HDFS RPC Port
+    volumes:
+      - hadoop_namenode:/hadoop/dfs/name
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9870/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    networks:
+      - cropshock_net
+
+  datanode:
+    image: bde2020/hadoop-datanode:2.0.0-hadoop3.2.1-java8
+    container_name: cropshock_datanode
+    environment:
+      - SERVICE_PRECONDITION=namenode:9870
+    ports:
+      - "9864:9864"   # DataNode Web UI
+    volumes:
+      - hadoop_datanode:/hadoop/dfs/data
+    depends_on:
+      - namenode
+    networks:
+      - cropshock_net
+
+  # ==========================================
+  # 2. Apache Spark (Master & Worker)
+  # ==========================================
+  spark-master:
+    image: bitnami/spark:3.5.1
+    container_name: cropshock_spark_master
+    environment:
+      - SPARK_MODE=master
+      - SPARK_RPC_AUTHENTICATION_ENABLED=no
+      - SPARK_RPC_ENCRYPTION_ENABLED=no
+      - SPARK_LOCAL_STORAGE_ENCRYPTION_ENABLED=no
+      - SPARK_SSL_ENABLED=no
+    ports:
+      - "8080:8080"   # Spark Master Web UI
+      - "7077:7077"   # Spark Master RPC
+    networks:
+      - cropshock_net
+
+  spark-worker:
+    image: bitnami/spark:3.5.1
+    container_name: cropshock_spark_worker
+    environment:
+      - SPARK_MODE=worker
+      - SPARK_MASTER_URL=spark://spark-master:7077
+      - SPARK_WORKER_MEMORY=2G
+      - SPARK_WORKER_CORES=2
+    ports:
+      - "8081:8081"   # Spark Worker Web UI
+    depends_on:
+      - spark-master
+    networks:
+      - cropshock_net
+
+  # ==========================================
+  # 3. PostgreSQL 16 Serving Layer
+  # ==========================================
+  postgres:
+    image: postgres:16-alpine
+    container_name: cropshock_postgres
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=cropshock_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - cropshock_net
+
+  # ==========================================
+  # 4. FastAPI Python Backend
+  # ==========================================
+  backend:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.backend
+    container_name: cropshock_backend
+    environment:
+      - DATABASE_URL=postgresql://postgres:postgres@postgres:5432/cropshock_db
+      - HADOOP_NAMENODE_HOST=namenode
+      - HADOOP_WEBHDFS_PORT=9870
+      - HDFS_NAMENODE_URL=hdfs://namenode:9000
+    ports:
+      - "8000:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      namenode:
+        condition: service_started
+    networks:
+      - cropshock_net
+
+  # ==========================================
+  # 5. React 19 Frontend Dashboard
+  # ==========================================
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: ../docker/Dockerfile.frontend
+    container_name: cropshock_frontend
+    environment:
+      - VITE_API_URL=http://localhost:8000/api/v1
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    networks:
+      - cropshock_net
+
+volumes:
+  hadoop_namenode:
+  hadoop_datanode:
+  pgdata:
+
+networks:
+  cropshock_net:
+    driver: bridge
