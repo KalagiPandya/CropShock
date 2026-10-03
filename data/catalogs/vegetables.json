@@ -1,0 +1,639 @@
+[
+  {
+    "commodity_id": 1,
+    "code": "TOM",
+    "name": "Tomato",
+    "local_name_gu": "ટામેટાં",
+    "botanical_group": "Solanaceous",
+    "perishability_tier": "HIGHLY_PERISHABLE",
+    "ambient_shelf_life_days": 4,
+    "standard_unit": "₹/Quintal",
+    "baseline_min_price": 800,
+    "baseline_max_price": 4500,
+    "weather_sensitivity_tags": [
+      "HEAVY_RAIN_SPOILAGE",
+      "HEAT_BLOSSOM_DROP",
+      "MAVTHU_VULNERABLE"
+    ]
+  },
+  {
+    "commodity_id": 2,
+    "code": "POT",
+    "name": "Potato",
+    "local_name_gu": "બટાકા",
+    "botanical_group": "Tubers & Bulbs",
+    "perishability_tier": "SEMI_PERISHABLE",
+    "ambient_shelf_life_days": 60,
+    "standard_unit": "₹/Quintal",
+    "baseline_min_price": 600,
+    "baseline_max_price": 2400,
+    "weather_sensitivity_tags": [
+      "WINTER_FROST_BLIGHT",
+      "SOIL_ROT",
+      "COLD_STORAGE_DEPENDENT"
+    ]
+  },
+  {
+    "commodity_id": 3,
+    "code": "ONI",
+    "name": "Onion",
+    "local_name_gu": "ડુંગળી",
+    "botanical_group": "Tubers & Bulbs",
+    "perishability_tier": "SEMI_PERISHABLE",
+    "ambient_shelf_life_days": 45,
+    "standard_unit": "₹/Quintal",
+    "baseline_min_price": 700,
+    "baseline_max_price": 3800,
+    "weather_sensitivity_tags": [
+      "LIFTING_RAIN_ROT",
+      "HIGH_HUMIDITY_SPROUTING",
+      "MAHUVA_SPECIALTY"
+    ]
+  },
+  {
+    "commodity_id": 4,
+    "code": "GAR",
+    "name": "Garlic",
+    "local_name_gu": "લસણ",
+    "botanical_group": "Tubers & Bulbs",
+    "perishability_tier": "SEMI_PERISHABLE",
+    "ambient_shelf_life_days": 120,
+    "standard_unit": "₹/Quintal",
+    "baseline_min_price": 3000,
+    "baseline_max_price": 18000,
+    "weather_sensitivity_tags": [
+      "CURING_MOISTURE_ROT",
+      "STORAGE_DAMPNESS",
+      "GONDAL_AUCTION_CORE"
+    ]
+  },
+  {
+    "commodity_id": 5,
+    "code": "GCH",
+    "name": "Green Chilli",
+    "local_name_gu": "લીલાં મરચાં",
+    "botanical_group": "Solanaceous",
+    "perishability_tier": "MODERATELY_PERISHABLE",
+    "ambient_shelf_life_days": 7,
+    "standard_unit": "₹/Quintal",
+    "baseline_min_price": 1500,
+    "baseline_max_price": 6000,
+    "weather_sensitivity_tags": [
+      "DAMPING_OFF",
+      "HEAT_WITHERING",
+      "LEAF_CURL"
+    ]
+  },
+  {
+    "commodity_id": 6,
+    "code": "BRN",
+    "name": "Brinjal / Eggplant",
+    "local_name_gu": "રીંગણ",
+    "botanical_group": "Solanaceous",
+    "perishability_tier": "MODERATELY_PERISHABLE",
+    "ambient_shelf_life_days": 5,
+    "standard_unit": "₹/Quintal",
+    "baseline_min_price": 800,
+    "baseline_max_price": 3200,
+    "weather_sensitivity_tags": [
+      "WATERLOGGING_ROOT_ROT",
+      "COLD_STUNTING",
+      "BORER_ATTACK"
+    ]
+  },
+  {
+    "commodity_id": 7,
+    "code": "OKR",
+    "name": "Lady's Finger / Okra",
+    "local_name_gu": "ભીંડા",
+    "botanical_group": "Legumes & Pods",
+    "perishability_tier": "HIGHLY_PERISHABLE",
+    "ambient_shelf_life_days": 4,
+    "standard_unit": "₹/Quintal",
+    "baseline_min_price": 1200,
+    "baseline_max_price": 5200,
+    "weather_sensitivity_tags": [
+      "YELLOW_VEIN_MOSAIC",
+      "ROOT_WATERLOGGING",
+      "FIBROUS_IN_HEAT"
+    ]
+  },
+  {
+    "commodity_id": 8,
+    "code": "CAB",
+    "name": "Cabbage",
+    "local_name_gu": "કોબીજ",
+    "botanical_group": "Cole Crops",
+    "perishability_tier": "MODERATELY_PERISHABLE",
+    "ambient_shelf_life_days": 10,
+    "standard_unit": "₹/Quintal",
+    "baseline_min_price": 500,
+    "baseline_max_price": 2200,
+    "weather_sensitivity_tags": [
+      "HEAD_SPLITTING_AFTER_RAIN",
+      "BLACK_ROT",
+      "HEAT_STRESS"
+    ]
+  },
+  {
+    "commodity_id": 9,
+    "code": "CAU",
+    "name": "Cauliflower",
+    "local_name_gu": "ફૂલાવર",
+    "botanical_group": "Cole Crops",
+    "perishability_tier": "HIGHLY_PERISHABLE",
+    "ambient_shelf_life_days": 5,
+    "standard_unit": "₹/Quintal",
+    "baseline_min_price": 700,
+    "baseline_max_price": 3500,
+    "weather_sensitivity_tags": [
+      "CURD_YELLOWING_HEAT",
+      "RAIN_BACTERIAL_ROT"
+    ]
+  },
+  {
+    "commodity_id": 10,
+    "code": "BGD",
+    "name": "Bottle Gourd",
+    "local_name_gu": "દૂધી",
+    "botanical_group": "Cucurbits & Gourds",
+    "perishability_tier": "MODERATELY_PERISHABLE",
+    "ambient_shelf_life_days": 8,
+    "standard_unit": "₹/Quintal",
+    "baseline_min_price": 600,
+    "baseline_max_price": 2500,
+    "weather_sensitivity_tags": [
+      "DOWNY_MILDEW_RAIN",
+      "HEAT_SCALDS"
+    ]
+  },
+  {
+    "commodity_id": 11,
+    "code": "BTG",
+    "name": "Bitter Gourd",
+    "local_name_gu": "કારેલાં",
+    "botanical_group": "Cucurbits & Gourds",
+    "perishability_tier": "MODERATELY_PERISHABLE",
+    "ambient_shelf_life_days": 7,
+    "standard_unit": "₹/Quintal",
+    "baseline_min_price": 1200,
+    "baseline_max_price": 4200,
+    "weather_sensitivity_tags": [
+      "CONTINUOUS_RAIN_ROT",
+      "FRUIT_FLY_MONSOON"
+    ]
+  },
+  {
+    "commodity_id": 12,
+    "code": "RGD",
+    "name": "Ridge Gourd",
+    "local_name_gu": "તુરિયાં",
+    "botanical_group": "Cucurbits & Gourds",
+    "perishability_tier": "HIGHLY_PERISHABLE",
+    "ambient_shelf_life_days": 4,
+    "standard_unit": "₹/Quintal",
+    "baseline_min_price": 1400,
+    "baseline_max_price": 4800,
+    "weather_sensitivity_tags": [
+      "RAPID_SURFACE_ROT",
+      "HEAT_WILTING"
+    ]
+  },
+  {
+    "commodity_id": 13,
+    "code": "SPG",
+    "name": "Sponge Gourd",
+    "local_name_gu": "ગલકાં",
+    "botanical_group": "Cucurbits & Gourds",
+    "perishability_tier": "HIGHLY_PERISHABLE",
+    "ambient_shelf_life_days": 4,
+    "standard_unit": "₹/Quintal",
+    "baseline_min_price": 1100,
+    "baseline_max_price": 3800,
+    "weather_sensitivity_tags": [
+      "HIGH_HUMIDITY_SLIME",
+      "BRUISING"
+    ]
+  },
+  {
+    "commodity_id": 14,
+    "code": "IVG",
+    "name": "Ivy Gourd / Little Gourd",
+    "local_name_gu": "ટીંડોરા / ગીલોડાં",
+    "botanical_group": "Cucurbits & Gourds",
+    "perishability_tier": "MODERATELY_PERISHABLE",
+    "ambient_shelf_life_days": 7,
+    "standard_unit": "₹/Quintal",
+    "baseline_min_price": 1500,
+    "baseline_max_price": 5000,
+    "weather_sensitivity_tags": [
+      "TRANSIT_WATERLOGGING_ROT",
+      "SURAT_SPECIALTY"
+    ]
+  },
+  {
+    "commodity_id": 15,
+    "code": "PTG",
+    "name": "Pointed Gourd",
+    "local_name_gu": "પરવળ",
+    "botanical_group": "Cucurbits & Gourds",
+    "perishability_tier": "MODERATELY_PERISHABLE",
+    "ambient_shelf_life_days": 6,
+    "standard_unit": "₹/Quintal",
+    "baseline_min_price": 1800,
+    "baseline_max_price": 5500,
+    "weather_sensitivity_tags": [
+      "ROOT_ROT_FLOODING",
+      "HIGH_HUMIDITY"
+    ]
+  },
+  {
+    "commodity_id": 16,
+    "code": "CUC",
+    "name": "Cucumber",
+    "local_name_gu": "કાકડી / ખીરા",
+    "botanical_group": "Cucurbits & Gourds",
+    "perishability_tier": "HIGHLY_PERISHABLE",
+    "ambient_shelf_life_days": 5,
+    "standard_unit": "₹/Quintal",
+    "baseline_min_price": 800,
+    "baseline_max_price": 3000,
+    "weather_sensitivity_tags": [
+      "HEAT_DEHYDRATION",
+      "POWDERY_MILDEW"
+    ]
+  },
+  {
+    "commodity_id": 17,
+    "code": "PUM",
+    "name": "Pumpkin",
+    "local_name_gu": "કોળું",
+    "botanical_group": "Cucurbits & Gourds",
+    "perishability_tier": "SEMI_PERISHABLE",
+    "ambient_shelf_life_days": 60,
+    "standard_unit": "₹/Quintal",
+    "baseline_min_price": 500,
+    "baseline_max_price": 1800,
+    "weather_sensitivity_tags": [
+      "CURING_MOISTURE_DAMAGE",
+      "STORAGE_DAMPNESS"
+    ]
+  },
+  {
+    "commodity_id": 18,
+    "code": "CLB",
+    "name": "Cluster Beans",
+    "local_name_gu": "ગુવાર શીંગ",
+    "botanical_group": "Legumes & Pods",
+    "perishability_tier": "MODERATELY_PERISHABLE",
+    "ambient_shelf_life_days": 6,
+    "standard_unit": "₹/Quintal",
+    "baseline_min_price": 1600,
+    "baseline_max_price": 5500,
+    "weather_sensitivity_tags": [
+      "BACTERIAL_BLIGHT",
+      "HARVEST_RAIN_SPOILAGE"
+    ]
+  },
+  {
+    "commodity_id": 19,
+    "code": "CWP",
+    "name": "Cowpea / Long Beans",
+    "local_name_gu": "ચોળા શીંગ",
+    "botanical_group": "Legumes & Pods",
+    "perishability_tier": "HIGHLY_PERISHABLE",
+    "ambient_shelf_life_days": 4,
+    "standard_unit": "₹/Quintal",
+    "baseline_min_price": 1400,
+    "baseline_max_price": 4600,
+    "weather_sensitivity_tags": [
+      "HIGH_HEAT_WILTING",
+      "POD_BLIGHT"
+    ]
+  },
+  {
+    "commodity_id": 20,
+    "code": "FRB",
+    "name": "French Beans",
+    "local_name_gu": "ફણસી",
+    "botanical_group": "Legumes & Pods",
+    "perishability_tier": "HIGHLY_PERISHABLE",
+    "ambient_shelf_life_days": 5,
+    "standard_unit": "₹/Quintal",
+    "baseline_min_price": 2000,
+    "baseline_max_price": 7000,
+    "weather_sensitivity_tags": [
+      "TEMPERATURE_EXTREMES",
+      "SNAP_LOSS"
+    ]
+  },
+  {
+    "commodity_id": 21,
+    "code": "GPE",
+    "name": "Green Peas",
+    "local_name_gu": "લીલા વટાણા",
+    "botanical_group": "Legumes & Pods",
+    "perishability_tier": "HIGHLY_PERISHABLE",
+    "ambient_shelf_life_days": 5,
+    "standard_unit": "₹/Quintal",
+    "baseline_min_price": 2200,
+    "baseline_max_price": 8500,
+    "weather_sensitivity_tags": [
+      "HEAT_POD_FILLING_FAILURE",
+      "UNTIMELY_RAIN_MOLD"
+    ]
+  },
+  {
+    "commodity_id": 22,
+    "code": "DRM",
+    "name": "Drumstick / Moringa",
+    "local_name_gu": "સરગવો",
+    "botanical_group": "Legumes & Pods",
+    "perishability_tier": "MODERATELY_PERISHABLE",
+    "ambient_shelf_life_days": 8,
+    "standard_unit": "₹/Quintal",
+    "baseline_min_price": 1800,
+    "baseline_max_price": 6500,
+    "weather_sensitivity_tags": [
+      "GALE_WINDS_POD_SNAP",
+      "TRANSIT_BREAKAGE"
+    ]
+  },
+  {
+    "commodity_id": 23,
+    "code": "PAP",
+    "name": "Flat Beans / Hyacinth",
+    "local_name_gu": "પાપડી / વાલોર",
+    "botanical_group": "Legumes & Pods",
+    "perishability_tier": "MODERATELY_PERISHABLE",
+    "ambient_shelf_life_days": 6,
+    "standard_unit": "₹/Quintal",
+    "baseline_min_price": 1500,
+    "baseline_max_price": 5000,
+    "weather_sensitivity_tags": [
+      "SURTI_PAPDI_COLD_DEPENDENCE",
+      "APHID_ATTACK"
+    ]
+  },
+  {
+    "commodity_id": 24,
+    "code": "COR",
+    "name": "Coriander",
+    "local_name_gu": "કોથમીર",
+    "botanical_group": "Leafy Greens",
+    "perishability_tier": "HIGHLY_PERISHABLE",
+    "ambient_shelf_life_days": 2,
+    "standard_unit": "₹/Quintal",
+    "baseline_min_price": 1000,
+    "baseline_max_price": 7500,
+    "weather_sensitivity_tags": [
+      "HEAT_LEAF_SCALDS",
+      "SLIME_ROT_TRAPPED_RAIN"
+    ]
+  },
+  {
+    "commodity_id": 25,
+    "code": "FEN",
+    "name": "Fenugreek Leaves",
+    "local_name_gu": "મેથીની ભાજી",
+    "botanical_group": "Leafy Greens",
+    "perishability_tier": "HIGHLY_PERISHABLE",
+    "ambient_shelf_life_days": 2,
+    "standard_unit": "₹/Quintal",
+    "baseline_min_price": 800,
+    "baseline_max_price": 4500,
+    "weather_sensitivity_tags": [
+      "RAPID_YELLOWING",
+      "RAIN_MUD_DAMAGE"
+    ]
+  },
+  {
+    "commodity_id": 26,
+    "code": "SPN",
+    "name": "Spinach",
+    "local_name_gu": "પાલક",
+    "botanical_group": "Leafy Greens",
+    "perishability_tier": "HIGHLY_PERISHABLE",
+    "ambient_shelf_life_days": 2,
+    "standard_unit": "₹/Quintal",
+    "baseline_min_price": 700,
+    "baseline_max_price": 4000,
+    "weather_sensitivity_tags": [
+      "SLIME_ROT",
+      "DOWNY_MILDEW_MONSOON"
+    ]
+  },
+  {
+    "commodity_id": 27,
+    "code": "MNT",
+    "name": "Mint",
+    "local_name_gu": "ફુદીનો",
+    "botanical_group": "Leafy Greens",
+    "perishability_tier": "HIGHLY_PERISHABLE",
+    "ambient_shelf_life_days": 3,
+    "standard_unit": "₹/Quintal",
+    "baseline_min_price": 1500,
+    "baseline_max_price": 6000,
+    "weather_sensitivity_tags": [
+      "HEAT_DESICCATION",
+      "TRANSIT_HEAT_DAMAGE"
+    ]
+  },
+  {
+    "commodity_id": 28,
+    "code": "AMR",
+    "name": "Amaranth Greens",
+    "local_name_gu": "તાંદળજો",
+    "botanical_group": "Leafy Greens",
+    "perishability_tier": "HIGHLY_PERISHABLE",
+    "ambient_shelf_life_days": 2,
+    "standard_unit": "₹/Quintal",
+    "baseline_min_price": 600,
+    "baseline_max_price": 3200,
+    "weather_sensitivity_tags": [
+      "ULTRA_DELICATE",
+      "HEAT_COLLAPSE"
+    ]
+  },
+  {
+    "commodity_id": 29,
+    "code": "GNG",
+    "name": "Ginger",
+    "local_name_gu": "આદું",
+    "botanical_group": "Tubers & Bulbs",
+    "perishability_tier": "SEMI_PERISHABLE",
+    "ambient_shelf_life_days": 30,
+    "standard_unit": "₹/Quintal",
+    "baseline_min_price": 2500,
+    "baseline_max_price": 11000,
+    "weather_sensitivity_tags": [
+      "RHIZOME_ROT_WATERLOGGING",
+      "SOIL_NEMATODES"
+    ]
+  },
+  {
+    "commodity_id": 30,
+    "code": "CAR",
+    "name": "Carrot",
+    "local_name_gu": "ગાજર",
+    "botanical_group": "Tubers & Bulbs",
+    "perishability_tier": "MODERATELY_PERISHABLE",
+    "ambient_shelf_life_days": 9,
+    "standard_unit": "₹/Quintal",
+    "baseline_min_price": 900,
+    "baseline_max_price": 3200,
+    "weather_sensitivity_tags": [
+      "HEAT_CORE_FIBER",
+      "CAVITY_SPOT_EXCESS_WATER"
+    ]
+  },
+  {
+    "commodity_id": 31,
+    "code": "RAD",
+    "name": "Radish",
+    "local_name_gu": "મૂળા",
+    "botanical_group": "Tubers & Bulbs",
+    "perishability_tier": "MODERATELY_PERISHABLE",
+    "ambient_shelf_life_days": 6,
+    "standard_unit": "₹/Quintal",
+    "baseline_min_price": 600,
+    "baseline_max_price": 2400,
+    "weather_sensitivity_tags": [
+      "PITHINESS_DROUGHT",
+      "ROOT_CRACKING_RAIN"
+    ]
+  },
+  {
+    "commodity_id": 32,
+    "code": "BET",
+    "name": "Beetroot",
+    "local_name_gu": "બીટ",
+    "botanical_group": "Tubers & Bulbs",
+    "perishability_tier": "MODERATELY_PERISHABLE",
+    "ambient_shelf_life_days": 14,
+    "standard_unit": "₹/Quintal",
+    "baseline_min_price": 1000,
+    "baseline_max_price": 3500,
+    "weather_sensitivity_tags": [
+      "HEAT_ZONING",
+      "SHRINKAGE_DRY_AIR"
+    ]
+  },
+  {
+    "commodity_id": 33,
+    "code": "SWP",
+    "name": "Sweet Potato",
+    "local_name_gu": "શક્કરિયાં",
+    "botanical_group": "Tubers & Bulbs",
+    "perishability_tier": "SEMI_PERISHABLE",
+    "ambient_shelf_life_days": 35,
+    "standard_unit": "₹/Quintal",
+    "baseline_min_price": 1200,
+    "baseline_max_price": 4000,
+    "weather_sensitivity_tags": [
+      "CHILLING_INJURY_COLD",
+      "WEEVIL_DRY_SOIL"
+    ]
+  },
+  {
+    "commodity_id": 34,
+    "code": "YAM",
+    "name": "Elephant Foot Yam",
+    "local_name_gu": "સૂરણ",
+    "botanical_group": "Tubers & Bulbs",
+    "perishability_tier": "SEMI_PERISHABLE",
+    "ambient_shelf_life_days": 60,
+    "standard_unit": "₹/Quintal",
+    "baseline_min_price": 1800,
+    "baseline_max_price": 5500,
+    "weather_sensitivity_tags": [
+      "SURAT_BARDOLI_SPECIALTY",
+      "BRUISING_SOFT_ROT"
+    ]
+  },
+  {
+    "commodity_id": 35,
+    "code": "COL",
+    "name": "Colocasia / Taro Root",
+    "local_name_gu": "અળવી ગંઠોડા",
+    "botanical_group": "Tubers & Bulbs",
+    "perishability_tier": "SEMI_PERISHABLE",
+    "ambient_shelf_life_days": 25,
+    "standard_unit": "₹/Quintal",
+    "baseline_min_price": 1600,
+    "baseline_max_price": 5000,
+    "weather_sensitivity_tags": [
+      "STORAGE_DAMPNESS_ROT",
+      "DANG_HILL_TRIBAL"
+    ]
+  },
+  {
+    "commodity_id": 36,
+    "code": "CAP",
+    "name": "Capsicum / Bell Pepper",
+    "local_name_gu": "કેપ્સીકમ મરચાં",
+    "botanical_group": "Solanaceous",
+    "perishability_tier": "HIGHLY_PERISHABLE",
+    "ambient_shelf_life_days": 5,
+    "standard_unit": "₹/Quintal",
+    "baseline_min_price": 1800,
+    "baseline_max_price": 6800,
+    "weather_sensitivity_tags": [
+      "SUNSCALD_HIGH_HEAT",
+      "BLOSSOM_END_ROT"
+    ]
+  },
+  {
+    "commodity_id": 37,
+    "code": "LEM",
+    "name": "Lemon / Lime",
+    "local_name_gu": "લીંબુ",
+    "botanical_group": "Citrus & Seasonings",
+    "perishability_tier": "MODERATELY_PERISHABLE",
+    "ambient_shelf_life_days": 15,
+    "standard_unit": "₹/Quintal",
+    "baseline_min_price": 2000,
+    "baseline_max_price": 9500,
+    "weather_sensitivity_tags": [
+      "SUMMER_PRICE_SPIKE",
+      "CANKER_POST_RAIN",
+      "MEHSANA_LEMON_BELT"
+    ]
+  },
+  {
+    "commodity_id": 38,
+    "code": "SWC",
+    "name": "Sweet Corn / Green Maize",
+    "local_name_gu": "લીલી મકાઈ",
+    "botanical_group": "Solanaceous & Fruiting",
+    "perishability_tier": "MODERATELY_PERISHABLE",
+    "ambient_shelf_life_days": 5,
+    "standard_unit": "₹/Quintal",
+    "baseline_min_price": 1200.0,
+    "baseline_max_price": 2400.0
+  },
+  {
+    "commodity_id": 39,
+    "code": "ASH",
+    "name": "Ash Gourd / Winter Melon",
+    "local_name_gu": "પેઠા / સફેદ કોળું",
+    "botanical_group": "Cucurbits & Gourds",
+    "perishability_tier": "SEMI_PERISHABLE",
+    "ambient_shelf_life_days": 60,
+    "standard_unit": "₹/Quintal",
+    "baseline_min_price": 900.0,
+    "baseline_max_price": 2000.0
+  },
+  {
+    "commodity_id": 40,
+    "code": "KNK",
+    "name": "Knol Khol / Kohlrabi",
+    "local_name_gu": "ગાંઠ કોબી",
+    "botanical_group": "Cole Crops",
+    "perishability_tier": "MODERATELY_PERISHABLE",
+    "ambient_shelf_life_days": 10,
+    "standard_unit": "₹/Quintal",
+    "baseline_min_price": 1100.0,
+    "baseline_max_price": 2500.0
+  }
+]
