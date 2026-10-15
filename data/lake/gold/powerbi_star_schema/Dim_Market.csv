@@ -1,0 +1,41 @@
+market_id,code,name,district,taluka,zone,state,latitude,longitude,elevation_m,market_tier,catchment_villages_approx,primary_specializations,is_active
+1,GJ_RKT_GONDAL,Gondal APMC,Rajkot,Gondal,Saurashtra,Gujarat,21.9619,70.7923,132,TIER_1_MAJOR,140,"['Garlic', 'Onion', 'Tomato', 'Green Chilli']",True
+2,GJ_RKT_RAJKOT,Rajkot APMC (Bedi),Rajkot,Rajkot,Saurashtra,Gujarat,22.3039,70.8022,138,TIER_1_MAJOR,180,"['Vegetables Aggregation', 'Tomato', 'Potato', 'Onion']",True
+3,GJ_BHV_MAHUVA,Mahuva APMC,Bhavnagar,Mahuva,Saurashtra,Gujarat,21.0914,71.7617,22,TIER_1_MAJOR,130,"['White Onion', 'Red Onion', 'Garlic', 'Green Peas']",True
+4,GJ_BHV_BHAVNAGAR,Bhavnagar APMC,Bhavnagar,Bhavnagar,Saurashtra,Gujarat,21.7645,72.1519,24,TIER_2_REGIONAL,110,"['Onion', 'Brinjal', 'Tomato', 'Leafy Greens']",True
+5,GJ_JND_JUNAGADH,Junagadh APMC,Junagadh,Junagadh,Saurashtra,Gujarat,21.5222,70.4579,107,TIER_2_REGIONAL,120,"['Coriander', 'Cabbage', 'Cauliflower', 'Brinjal']",True
+6,GJ_JMN_JAMNAGAR,Jamnagar APMC (Hapa),Jamnagar,Jamnagar,Saurashtra,Gujarat,22.4707,70.0577,20,TIER_2_REGIONAL,115,"['Garlic', 'Tomato', 'Green Chilli', 'Bottle Gourd']",True
+7,GJ_AMR_AMRELI,Amreli APMC,Amreli,Amreli,Saurashtra,Gujarat,21.6032,71.2223,128,TIER_2_REGIONAL,95,"['Onion', 'Tomato', 'Brinjal', 'Cluster Beans']",True
+8,GJ_SND_SURENDRANAGAR,Surendranagar APMC,Surendranagar,Wadhwan,Saurashtra,Gujarat,22.7274,71.637,98,TIER_2_REGIONAL,105,"['Tomato', 'Okra', 'Green Chilli', 'Carrot']",True
+9,GJ_MRB_MORBI,Morbi APMC,Morbi,Morbi,Saurashtra,Gujarat,22.812,70.8378,54,TIER_2_REGIONAL,85,"['Vegetables Spot Market', 'Tomato', 'Potato', 'Cabbage']",True
+10,GJ_PBD_PORBANDAR,Porbandar APMC,Porbandar,Porbandar,Saurashtra,Gujarat,21.6417,69.6293,5,TIER_3_FEEDER,60,"['Leafy Greens', 'Okra', 'Brinjal', 'Gourds']",True
+11,GJ_BOT_BOTAD,Botad APMC,Botad,Botad,Saurashtra,Gujarat,22.1695,71.6666,70,TIER_3_FEEDER,75,"['Onion', 'Tomato', 'Green Chilli', 'Garlic']",True
+12,GJ_GIR_KODINAR,Kodinar APMC,Gir Somnath,Kodinar,Saurashtra,Gujarat,20.7937,70.7032,14,TIER_3_FEEDER,65,"['Coriander', 'Tomato', 'Drumstick', 'Brinjal']",True
+13,GJ_DWD_KHAMBHALIA,Khambhalia APMC,Devbhumi Dwarka,Khambhalia,Saurashtra,Gujarat,22.2078,69.6586,43,TIER_3_FEEDER,55,"['Garlic', 'Onion', 'Green Chilli', 'Okra']",True
+14,GJ_AMD_JAMALPUR,Ahmedabad APMC (Jamalpur / Vasna),Ahmedabad,Ahmedabad City,Central Gujarat,Gujarat,23.0225,72.5714,53,TIER_1_MAJOR,250,"['Statewide Mega Terminal', 'All Vegetables', 'Tomato', 'Potato', 'Onion', 'Leafy Greens']",True
+15,GJ_AMD_NARODA,Ahmedabad APMC (Naroda Sub-Yard),Ahmedabad,Daskroi,Central Gujarat,Gujarat,23.0763,72.6586,56,TIER_1_MAJOR,160,"['North-East Urban Inflow', 'Potato', 'Cabbage', 'Cauliflower', 'Gourds']",True
+16,GJ_AND_ANAND,Anand APMC,Anand,Anand,Central Gujarat,Gujarat,22.5645,72.9289,42,TIER_1_MAJOR,150,"['Charotar Vegetable Basket', 'Tomato', 'Brinjal', 'Okra', 'Bottle Gourd', 'Cluster Beans']",True
+17,GJ_KHD_NADIAD,Nadiad APMC,Kheda,Nadiad,Central Gujarat,Gujarat,22.6916,72.8634,35,TIER_2_REGIONAL,130,"['Tomato', 'Okra', 'Green Peas', 'Bitter Gourd']",True
+18,GJ_VAD_VADODARA,Vadodara APMC (Sayajipura),Vadodara,Vadodara City,Central Gujarat,Gujarat,22.3072,73.1812,39,TIER_1_MAJOR,190,"['Urban Consumption Yard', 'Tomato', 'Brinjal', 'Cauliflower', 'Leafy Greens']",True
+19,GJ_PNC_GODHRA,Godhra APMC,Panchmahal,Godhra,Central Gujarat,Gujarat,22.7766,73.6149,120,TIER_2_REGIONAL,90,"['Green Chilli', 'Ginger', 'Yam / Suran', 'Gourds']",True
+20,GJ_DHD_DAHOD,Dahod APMC,Dahod,Dahod,Central Gujarat,Gujarat,22.834,74.2547,290,TIER_2_REGIONAL,110,"['Interstate Inflow', 'Tomato', 'Garlic', 'Ginger', 'Green Maize']",True
+21,GJ_MSG_LUNAWADA,Lunawada APMC,Mahisagar,Lunawada,Central Gujarat,Gujarat,23.1325,73.6166,95,TIER_3_FEEDER,70,"['Bottle Gourd', 'Tomato', 'Brinjal', 'Cluster Beans']",True
+22,GJ_BK_DEESA,Deesa APMC,Banaskantha,Deesa,North Gujarat,Gujarat,24.2586,72.1804,142,TIER_1_MAJOR,210,"['National Potato Capital', 'Potato', 'Carrot', 'Cabbage', 'Mustard Greens']",True
+23,GJ_BK_PALANPUR,Palanpur APMC,Banaskantha,Palanpur,North Gujarat,Gujarat,24.1724,72.4346,252,TIER_2_REGIONAL,125,"['Potato', 'Onion', 'Green Peas', 'Tomato']",True
+24,GJ_MSH_MEHSANA,Mehsana APMC,Mehsana,Mehsana,North Gujarat,Gujarat,23.588,72.3693,81,TIER_2_REGIONAL,130,"['Tomato', 'Okra', 'Cauliflower', 'Fenugreek']",True
+25,GJ_MSH_UNJHA,Unjha APMC,Mehsana,Unjha,North Gujarat,Gujarat,23.8037,72.3925,111,TIER_1_MAJOR,140,"['Commercial Spices & Seed Vegetables', 'Garlic', 'Coriander', 'Ginger']",True
+26,GJ_PTN_PATAN,Patan APMC,Patan,Patan,North Gujarat,Gujarat,23.8507,72.1266,76,TIER_2_REGIONAL,100,"['Tomato', 'Potato', 'Bitter Gourd', 'Cluster Beans']",True
+27,GJ_SK_HIMATNAGAR,Himatnagar APMC,Sabarkantha,Himatnagar,North Gujarat,Gujarat,23.5977,72.9698,127,TIER_2_REGIONAL,120,"['Cauliflower', 'Cabbage', 'Tomato', 'Green Peas']",True
+28,GJ_ARV_MODASA,Modasa APMC,Aravalli,Modasa,North Gujarat,Gujarat,23.4632,73.2984,197,TIER_3_FEEDER,85,"['Green Chilli', 'Ginger', 'Brinjal', 'Okra']",True
+29,GJ_GND_GANDHINAGAR,Gandhinagar APMC (Mansa),Gandhinagar,Mansa,North Gujarat,Gujarat,23.4243,72.6625,94,TIER_2_REGIONAL,90,"['Leafy Greens', 'Spinach', 'Fenugreek', 'Tomato', 'Okra']",True
+30,GJ_SRT_SURAT,Surat APMC (Sardar Market),Surat,Surat City,South Gujarat,Gujarat,21.1702,72.8311,13,TIER_1_MAJOR,240,"['South Gujarat Mega Terminal', 'All Vegetables', 'Tomato', 'Okra', 'Ivy Gourd / Tindora', 'Pointed Gourd']",True
+31,GJ_SRT_BARDOLI,Bardoli APMC,Surat,Bardoli,South Gujarat,Gujarat,21.1217,73.1118,22,TIER_2_REGIONAL,95,"['Elephant Foot Yam / Suran', 'Ginger', 'Bottle Gourd', 'Okra']",True
+32,GJ_NAV_NAVSARI,Navsari APMC,Navsari,Navsari,South Gujarat,Gujarat,20.9467,72.952,9,TIER_2_REGIONAL,105,"['Ivy Gourd / Tindora', 'Drumstick', 'Brinjal', 'Flat Beans / Papdi']",True
+33,GJ_VLS_VALSAD,Valsad APMC,Valsad,Valsad,South Gujarat,Gujarat,20.5992,72.9342,16,TIER_2_REGIONAL,100,"['Ridge Gourd', 'Sponge Gourd', 'Green Chilli', 'Cucumber']",True
+34,GJ_BHR_BHARUCH,Bharuch APMC,Bharuch,Bharuch,South Gujarat,Gujarat,21.7051,72.9959,15,TIER_2_REGIONAL,90,"['Tomato', 'Okra', 'Brinjal', 'Cabbage']",True
+35,GJ_NRM_RAJPIPLA,Rajpipla APMC,Narmada,Nandod,South Gujarat,Gujarat,21.8711,73.5029,45,TIER_3_FEEDER,70,"['Ginger', 'Colocasia / Arbi', 'Bottle Gourd', 'Cluster Beans']",True
+36,GJ_TAP_VYARA,Vyara APMC,Tapi,Vyara,South Gujarat,Gujarat,21.1165,73.3912,98,TIER_3_FEEDER,80,"['Elephant Foot Yam', 'Sweet Potato', 'Okra', 'Brinjal']",True
+37,GJ_DNG_AHWA,Ahwa APMC Sub-Yard,Dang,Ahwa,South Gujarat,Gujarat,20.757,73.684,540,TIER_3_FEEDER,65,"['Hill Forest Produce', 'Ginger', 'Colocasia / Arbi', 'Sweet Potato']",True
+38,GJ_KCH_BHUJ,Bhuj APMC,Kutch,Bhuj,Kutch,Gujarat,23.242,69.6669,110,TIER_2_REGIONAL,115,"['Kutch Regional Hub', 'Onion', 'Tomato', 'Cluster Beans', 'Carrot']",True
+39,GJ_KCH_GANDHIDHAM,Gandhidham APMC,Kutch,Gandhidham,Kutch,Gujarat,23.0753,70.1337,27,TIER_2_REGIONAL,85,"['Port Corridor Inflow', 'Potato', 'Onion', 'Garlic', 'Cabbage']",True
+40,GJ_CHU_BODELI,Bodeli APMC,Chhota Udaipur,Bodeli,Central Gujarat,Gujarat,22.2583,73.7144,108,TIER_2_REGIONAL,95,"['Central Tribal Belt Hub', 'Sweet Corn / Green Maize', 'Banana', 'Okra', 'Brinjal', 'Flat Beans / Papdi']",True
