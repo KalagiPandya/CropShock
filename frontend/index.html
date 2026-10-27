@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2310b981'><path d='M12 2L4 9v12h16V9l-8-7zm0 3.8L18 10v9H6v-9l6-4.2z'/></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CropShock — Gujarat Agricultural Supply Chain & Market Intelligence</title>
+    <meta name="description" content="Enterprise Big Data intelligence platform analyzing 39 Gujarat APMC mandis and 37 vegetable commodities with explainable supply-risk scoring, Hadoop data lake, and procurement arbitrage." />
+    <!-- Modern Typography: Inter & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Auto-Clean Stale LocalStorage Cache -->
+    <script>
+      try {
+        var p = localStorage.getItem('cropshock_auth_profile');
+        if (p && (!p.includes('roleMetrics') || !p.includes('primaryTabs'))) {
+          localStorage.removeItem('cropshock_auth_profile');
+          localStorage.removeItem('cropshock_jwt_token');
+        }
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
