@@ -4,9 +4,11 @@ import {
   Layers, CheckCircle, ExternalLink, Table, BarChart3, Clock, Sparkles
 } from 'lucide-react';
 
+const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8000/api/v1';
+
 export const PowerBIExport: React.FC = () => {
   const downloadTable = (tableName: string) => {
-    window.open(`http://localhost:8000/api/v1/export/powerbi?table_name=${tableName}`, '_blank');
+    window.open(`${API_BASE}/export/powerbi?table_name=${tableName}`, '_blank');
   };
 
   return (
@@ -163,7 +165,7 @@ export const PowerBIExport: React.FC = () => {
               In Power BI Desktop, navigate to <strong>Get Data → Web</strong> and paste:
             </p>
             <code style={{ display: 'block', color: '#38bdf8', padding: '10px 14px', background: 'rgba(0,0,0,0.4)', borderRadius: 8, fontSize: '0.85rem' }}>
-              http://localhost:8000/api/v1/export/powerbi?table_name=Fact_Market_Arrivals
+              {`${API_BASE}/export/powerbi?table_name=Fact_Market_Arrivals`}
             </code>
           </div>
 
