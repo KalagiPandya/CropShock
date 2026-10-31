@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="canvasGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050a14"/>
+      <stop offset="100%" stop-color="#0c172a"/>
+    </linearGradient>
+    <linearGradient id="bronzeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#78350f" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#451a03" stop-opacity="0.8"/>
+    </linearGradient>
+    <linearGradient id="silverGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#1e293b" stop-opacity="0.8"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#854d0e" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#713f12" stop-opacity="0.8"/>
+    </linearGradient>
+    <linearGradient id="servingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#065f46" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#064e3b" stop-opacity="0.8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="480" rx="16" fill="url(#canvasGrad)"/>
+  <rect width="1200" height="480" rx="16" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+
+  <!-- Section Header -->
+  <text x="50" y="55" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="24" font-weight="800">
+    CropShock End-to-End Medallion Lakehouse Architecture
+  </text>
+  <text x="50" y="80" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="14" font-weight="400">
+    Multi-hop streaming and batch processing from raw Gujarat APMC spot auctions to interactive analytical dashboards
+  </text>
+
+  <!-- 1. INGESTION SOURCES -->
+  <rect x="50" y="115" width="180" height="320" rx="12" fill="#0f172a" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+  <rect x="50" y="115" width="180" height="36" rx="12" fill="rgba(56, 189, 248, 0.12)"/>
+  <text x="70" y="139" fill="#38bdf8" font-family="Inter, sans-serif" font-size="13" font-weight="700">DATA SOURCES</text>
+  
+  <rect x="65" y="165" width="150" height="65" rx="8" fill="#1e293b" stroke="rgba(255,255,255,0.05)"/>
+  <text x="75" y="190" fill="#ffffff" font-family="Inter, sans-serif" font-size="13" font-weight="600">Agmarknet API</text>
+  <text x="75" y="212" fill="#94a3b8" font-family="Inter, sans-serif" font-size="11">39 Gujarat APMCs</text>
+
+  <rect x="65" y="245" width="150" height="65" rx="8" fill="#1e293b" stroke="rgba(255,255,255,0.05)"/>
+  <text x="75" y="270" fill="#ffffff" font-family="Inter, sans-serif" font-size="13" font-weight="600">Open-Meteo API</text>
+  <text x="75" y="292" fill="#94a3b8" font-family="Inter, sans-serif" font-size="11">Precipitation &amp; Temp</text>
+
+  <rect x="65" y="325" width="150" height="85" rx="8" fill="#1e293b" stroke="rgba(255,255,255,0.05)"/>
+  <text x="75" y="350" fill="#ffffff" font-family="Inter, sans-serif" font-size="13" font-weight="600">Catalogs &amp; Master</text>
+  <text x="75" y="372" fill="#94a3b8" font-family="Inter, sans-serif" font-size="11">37 Vegetable Crops</text>
+  <text x="75" y="392" fill="#94a3b8" font-family="Inter, sans-serif" font-size="11">33 District Coordinates</text>
+
+  <!-- Connect Arrow 1 -->
+  <path d="M 230 275 H 270" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4 4"/>
+  <polygon points="270,271 278,275 270,279" fill="#38bdf8"/>
+
+  <!-- 2. BRONZE LAYER -->
+  <rect x="280" y="115" width="195" height="320" rx="12" fill="url(#bronzeGrad)" stroke="rgba(217, 119, 6, 0.4)" stroke-width="1.5"/>
+  <rect x="280" y="115" width="195" height="36" rx="12" fill="rgba(217, 119, 6, 0.25)"/>
+  <text x="300" y="139" fill="#fbbf24" font-family="Inter, sans-serif" font-size="13" font-weight="700">BRONZE LAYER</text>
+
+  <rect x="295" y="165" width="165" height="110" rx="8" fill="#0f172a" stroke="rgba(217, 119, 6, 0.2)"/>
+  <text x="307" y="190" fill="#fde68a" font-family="Inter, sans-serif" font-size="13" font-weight="700">Raw Immutable Lake</text>
+  <text x="307" y="212" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11">&#x2022; Partitioned Parquet</text>
+  <text x="307" y="232" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11">&#x2022; SHA-256 Batch Hashes</text>
+  <text x="307" y="252" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11">&#x2022; Verbatim JSON payloads</text>
+
+  <rect x="295" y="290" width="165" height="120" rx="8" fill="#0f172a" stroke="rgba(217, 119, 6, 0.2)"/>
+  <text x="307" y="315" fill="#fde68a" font-family="Inter, sans-serif" font-size="13" font-weight="700">Data Governance</text>
+  <text x="307" y="337" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11">&#x2022; Append-only audit logs</text>
+  <text x="307" y="357" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11">&#x2022; Zero in-place edits</text>
+  <text x="307" y="377" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11">&#x2022; Replayability proof</text>
+
+  <!-- Connect Arrow 2 -->
+  <path d="M 475 275 H 515" stroke="#fbbf24" stroke-width="2"/>
+  <polygon points="515,271 523,275 515,279" fill="#fbbf24"/>
+
+  <!-- 3. SILVER LAYER -->
+  <rect x="525" y="115" width="195" height="320" rx="12" fill="url(#silverGrad)" stroke="rgba(148, 163, 184, 0.4)" stroke-width="1.5"/>
+  <rect x="525" y="115" width="195" height="36" rx="12" fill="rgba(148, 163, 184, 0.25)"/>
+  <text x="545" y="139" fill="#e2e8f0" font-family="Inter, sans-serif" font-size="13" font-weight="700">SILVER LAYER</text>
+
+  <rect x="540" y="165" width="165" height="110" rx="8" fill="#0f172a" stroke="rgba(148, 163, 184, 0.2)"/>
+  <text x="552" y="190" fill="#f8fafc" font-family="Inter, sans-serif" font-size="13" font-weight="700">Data Quality &amp; Clean</text>
+  <text x="552" y="212" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11">&#x2022; Multi-key Deduplication</text>
+  <text x="552" y="232" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11">&#x2022; Schema Enforcement</text>
+  <text x="552" y="252" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11">&#x2022; Unit Normalization</text>
+
+  <rect x="540" y="290" width="165" height="120" rx="8" fill="#0f172a" stroke="rgba(239, 68, 68, 0.3)"/>
+  <text x="552" y="315" fill="#f87171" font-family="Inter, sans-serif" font-size="13" font-weight="700">Quarantine Isolation</text>
+  <text x="552" y="337" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11">&#x2022; Outlier price detection</text>
+  <text x="552" y="357" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11">&#x2022; Null-key quarantine</text>
+  <text x="552" y="377" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11">&#x2022; Quality pass rate &gt;99%</text>
+
+  <!-- Connect Arrow 3 -->
+  <path d="M 720 275 H 760" stroke="#e2e8f0" stroke-width="2"/>
+  <polygon points="760,271 768,275 760,279" fill="#e2e8f0"/>
+
+  <!-- 4. GOLD LAYER -->
+  <rect x="770" y="115" width="195" height="320" rx="12" fill="url(#goldGrad)" stroke="rgba(234, 179, 8, 0.4)" stroke-width="1.5"/>
+  <rect x="770" y="115" width="195" height="36" rx="12" fill="rgba(234, 179, 8, 0.25)"/>
+  <text x="790" y="139" fill="#fef08a" font-family="Inter, sans-serif" font-size="13" font-weight="700">GOLD LAYER</text>
+
+  <rect x="785" y="165" width="165" height="110" rx="8" fill="#0f172a" stroke="rgba(234, 179, 8, 0.2)"/>
+  <text x="797" y="190" fill="#fef08a" font-family="Inter, sans-serif" font-size="13" font-weight="700">Feature Engineering</text>
+  <text x="797" y="212" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11">&#x2022; 7-day &amp; 30-day MAs</text>
+  <text x="797" y="232" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11">&#x2022; Volatility standard dev</text>
+  <text x="797" y="252" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11">&#x2022; Supply Shock Z-Score</text>
+
+  <rect x="785" y="290" width="165" height="120" rx="8" fill="#0f172a" stroke="rgba(234, 179, 8, 0.2)"/>
+  <text x="797" y="315" fill="#fef08a" font-family="Inter, sans-serif" font-size="13" font-weight="700">Kimball Star Schema</text>
+  <text x="797" y="337" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11">&#x2022; Dim_Market (SCD 1)</text>
+  <text x="797" y="357" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11">&#x2022; Dim_Commodity</text>
+  <text x="797" y="377" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="11">&#x2022; Fact_Market_Arrivals</text>
+
+  <!-- Connect Arrow 4 -->
+  <path d="M 965 275 H 1005" stroke="#fef08a" stroke-width="2"/>
+  <polygon points="1005,271 1013,275 1005,279" fill="#fef08a"/>
+
+  <!-- 5. SERVING & APPS -->
+  <rect x="1015" y="115" width="140" height="320" rx="12" fill="url(#servingGrad)" stroke="rgba(16, 185, 129, 0.4)" stroke-width="1.5"/>
+  <rect x="1015" y="115" width="140" height="36" rx="12" fill="rgba(16, 185, 129, 0.25)"/>
+  <text x="1027" y="139" fill="#34d399" font-family="Inter, sans-serif" font-size="13" font-weight="700">SERVING &amp; UI</text>
+
+  <rect x="1025" y="165" width="120" height="70" rx="8" fill="#0f172a" stroke="rgba(16, 185, 129, 0.2)"/>
+  <text x="1035" y="190" fill="#ffffff" font-family="Inter, sans-serif" font-size="12" font-weight="700">FastAPI REST</text>
+  <text x="1035" y="210" fill="#34d399" font-family="Inter, sans-serif" font-size="10">JWT Auth</text>
+  <text x="1035" y="225" fill="#94a3b8" font-family="Inter, sans-serif" font-size="10">&lt;15ms Latency</text>
+
+  <rect x="1025" y="247" width="120" height="75" rx="8" fill="#0f172a" stroke="rgba(16, 185, 129, 0.2)"/>
+  <text x="1035" y="270" fill="#ffffff" font-family="Inter, sans-serif" font-size="12" font-weight="700">React 19 UI</text>
+  <text x="1035" y="288" fill="#38bdf8" font-family="Inter, sans-serif" font-size="10">8 Command Views</text>
+  <text x="1035" y="303" fill="#94a3b8" font-family="Inter, sans-serif" font-size="10">4 Personas RBAC</text>
+
+  <rect x="1025" y="333" width="120" height="75" rx="8" fill="#0f172a" stroke="rgba(16, 185, 129, 0.2)"/>
+  <text x="1035" y="356" fill="#ffffff" font-family="Inter, sans-serif" font-size="12" font-weight="700">Power BI Export</text>
+  <text x="1035" y="374" fill="#fbbf24" font-family="Inter, sans-serif" font-size="10">DAX Measures</text>
+  <text x="1035" y="389" fill="#94a3b8" font-family="Inter, sans-serif" font-size="10">Direct Star CSV</text>
+</svg>

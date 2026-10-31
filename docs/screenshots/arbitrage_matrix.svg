@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 480" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0e172a"/>
+      <stop offset="100%" stop-color="#080e1e"/>
+    </linearGradient>
+    <linearGradient id="lowestGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064e3b" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#022c22" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="highestGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#881337" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#4c0519" stop-opacity="0.6"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="480" rx="14" fill="#060c18"/>
+  <rect width="1000" height="480" rx="14" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+
+  <!-- Top bar -->
+  <rect x="35" y="30" width="220" height="26" rx="13" fill="rgba(16, 185, 129, 0.15)" stroke="rgba(16, 185, 129, 0.4)"/>
+  <text x="50" y="47" fill="#34d399" font-family="Inter, sans-serif" font-size="11" font-weight="700">ARBITRAGE DETECTION ENGINE</text>
+  <text x="270" y="47" fill="#64748b" font-family="Inter, sans-serif" font-size="12">Multi-Mandi Price Dispersion</text>
+
+  <text x="35" y="92" fill="#ffffff" font-family="Inter, sans-serif" font-size="24" font-weight="800">
+    Cross-Mandi Arbitrage Matrix — Cabbage (કોબીજ)
+  </text>
+  <text x="35" y="118" fill="#94a3b8" font-family="Inter, sans-serif" font-size="13">
+    Real-time spot modal prices, arrival volumes, and spreads across key Gujarat wholesale nodes.
+  </text>
+
+  <!-- Filter & Chips row -->
+  <rect x="35" y="145" width="930" height="85" rx="10" fill="#0f172a" stroke="rgba(255,255,255,0.06)"/>
+  <text x="52" y="172" fill="#94a3b8" font-family="Inter, sans-serif" font-size="12" font-weight="600">Active Benchmark APMCs (2 to 5 Mandis):</text>
+
+  <!-- Active Chip 1: Gondal -->
+  <rect x="52" y="186" width="135" height="32" rx="16" fill="rgba(16, 185, 129, 0.2)" stroke="#10b981"/>
+  <circle cx="68" cy="202" r="4" fill="#10b981"/>
+  <text x="80" y="206" fill="#ffffff" font-family="Inter, sans-serif" font-size="12" font-weight="600">Gondal (Rajkot)</text>
+  <text x="172" y="206" fill="#a7f3d0" font-family="Inter, sans-serif" font-size="12">×</text>
+
+  <!-- Active Chip 2: Surat -->
+  <rect x="197" y="186" width="145" height="32" rx="16" fill="rgba(16, 185, 129, 0.2)" stroke="#10b981"/>
+  <circle cx="213" cy="202" r="4" fill="#10b981"/>
+  <text x="225" y="206" fill="#ffffff" font-family="Inter, sans-serif" font-size="12" font-weight="600">Surat Sardar Mkt</text>
+  <text x="328" y="206" fill="#a7f3d0" font-family="Inter, sans-serif" font-size="12">×</text>
+
+  <!-- Active Chip 3: Rajkot -->
+  <rect x="352" y="186" width="135" height="32" rx="16" fill="rgba(16, 185, 129, 0.2)" stroke="#10b981"/>
+  <circle cx="368" cy="202" r="4" fill="#10b981"/>
+  <text x="380" y="206" fill="#ffffff" font-family="Inter, sans-serif" font-size="12" font-weight="600">Rajkot Bedi APMC</text>
+  <text x="473" y="206" fill="#a7f3d0" font-family="Inter, sans-serif" font-size="12">×</text>
+
+  <!-- Active Chip 4: Ahmedabad -->
+  <rect x="497" y="186" width="160" height="32" rx="16" fill="rgba(16, 185, 129, 0.2)" stroke="#10b981"/>
+  <circle cx="513" cy="202" r="4" fill="#10b981"/>
+  <text x="525" y="206" fill="#ffffff" font-family="Inter, sans-serif" font-size="12" font-weight="600">Ahmedabad Jamalpur</text>
+  <text x="643" y="206" fill="#a7f3d0" font-family="Inter, sans-serif" font-size="12">×</text>
+
+  <!-- Quick Presets -->
+  <text x="680" y="206" fill="#64748b" font-family="Inter, sans-serif" font-size="12">Presets: 
+    <tspan fill="#38bdf8" font-weight="600">All Gujarat</tspan> &#x2022; 
+    <tspan fill="#94a3b8">Saurashtra Hubs</tspan> &#x2022; 
+    <tspan fill="#94a3b8">Central Consumption</tspan>
+  </text>
+
+  <!-- Metrics Grid -->
+  <!-- Card 1: Max Spread -->
+  <rect x="35" y="250" width="215" height="100" rx="10" fill="#0f172a" stroke="rgba(255,255,255,0.06)"/>
+  <text x="52" y="278" fill="#94a3b8" font-family="Inter, sans-serif" font-size="11" font-weight="600">MAX INTER-MANDI SPREAD</text>
+  <text x="52" y="318" fill="#ffffff" font-family="Inter, sans-serif" font-size="28" font-weight="800">₹197.63</text>
+  <text x="175" y="318" fill="#64748b" font-family="Inter, sans-serif" font-size="13">/Qtl</text>
+  <text x="52" y="338" fill="#94a3b8" font-family="Inter, sans-serif" font-size="11">Spread between lowest &amp; highest mandi</text>
+
+  <!-- Card 2: Arbitrage Potential -->
+  <rect x="270" y="250" width="215" height="100" rx="10" fill="#0f172a" stroke="rgba(255,255,255,0.06)"/>
+  <text x="287" y="278" fill="#94a3b8" font-family="Inter, sans-serif" font-size="11" font-weight="600">ARBITRAGE POTENTIAL</text>
+  <text x="287" y="318" fill="#fbbf24" font-family="Inter, sans-serif" font-size="28" font-weight="800">+15.82%</text>
+  <text x="287" y="338" fill="#94a3b8" font-family="Inter, sans-serif" font-size="11">Gross price divergence potential</text>
+
+  <!-- Card 3: Lowest Mandi -->
+  <rect x="505" y="250" width="225" height="100" rx="10" fill="url(#lowestGrad)" stroke="rgba(16, 185, 129, 0.4)"/>
+  <text x="522" y="278" fill="#34d399" font-family="Inter, sans-serif" font-size="11" font-weight="700">LOWEST COST MANDI</text>
+  <text x="522" y="310" fill="#ffffff" font-family="Inter, sans-serif" font-size="20" font-weight="800">Gondal APMC</text>
+  <text x="522" y="334" fill="#34d399" font-family="Inter, sans-serif" font-size="12">Spot Modal: ₹1,249.04 /Qtl</text>
+
+  <!-- Card 4: Highest Mandi -->
+  <rect x="750" y="250" width="215" height="100" rx="10" fill="url(#highestGrad)" stroke="rgba(244, 63, 94, 0.4)"/>
+  <text x="767" y="278" fill="#fb7185" font-family="Inter, sans-serif" font-size="11" font-weight="700">HIGHEST PREMIUM MANDI</text>
+  <text x="767" y="310" fill="#ffffff" font-family="Inter, sans-serif" font-size="18" font-weight="800">Ahmedabad APMC</text>
+  <text x="767" y="334" fill="#fda4af" font-family="Inter, sans-serif" font-size="12">Spot Modal: ₹1,446.67 /Qtl</text>
+
+  <!-- Mandi Comparison Cards Row -->
+  <rect x="35" y="365" width="215" height="90" rx="10" fill="#0f172a" stroke="rgba(16, 185, 129, 0.5)"/>
+  <text x="50" y="392" fill="#34d399" font-family="Inter, sans-serif" font-size="13" font-weight="700">Gondal APMC</text>
+  <text x="50" y="410" fill="#64748b" font-family="Inter, sans-serif" font-size="11">Saurashtra &#x2022; Lowest Source</text>
+  <text x="50" y="438" fill="#ffffff" font-family="Inter, sans-serif" font-size="18" font-weight="800">₹1,249.04 <tspan font-size="11" fill="#94a3b8">/Qtl</tspan></text>
+
+  <rect x="270" y="365" width="215" height="90" rx="10" fill="#0f172a" stroke="rgba(255,255,255,0.06)"/>
+  <text x="285" y="392" fill="#ffffff" font-family="Inter, sans-serif" font-size="13" font-weight="700">Surat APMC</text>
+  <text x="285" y="410" fill="#64748b" font-family="Inter, sans-serif" font-size="11">South Gujarat</text>
+  <text x="285" y="438" fill="#ffffff" font-family="Inter, sans-serif" font-size="18" font-weight="800">₹1,287.09 <tspan font-size="11" fill="#94a3b8">/Qtl</tspan></text>
+
+  <rect x="505" y="365" width="225" height="90" rx="10" fill="#0f172a" stroke="rgba(255,255,255,0.06)"/>
+  <text x="520" y="392" fill="#ffffff" font-family="Inter, sans-serif" font-size="13" font-weight="700">Rajkot (Bedi) APMC</text>
+  <text x="520" y="410" fill="#64748b" font-family="Inter, sans-serif" font-size="11">Saurashtra Hub</text>
+  <text x="520" y="438" fill="#ffffff" font-family="Inter, sans-serif" font-size="18" font-weight="800">₹1,378.95 <tspan font-size="11" fill="#94a3b8">/Qtl</tspan></text>
+
+  <rect x="750" y="365" width="215" height="90" rx="10" fill="#0f172a" stroke="rgba(244, 63, 94, 0.5)"/>
+  <text x="765" y="392" fill="#fb7185" font-family="Inter, sans-serif" font-size="13" font-weight="700">Ahmedabad (Jamalpur)</text>
+  <text x="765" y="410" fill="#64748b" font-family="Inter, sans-serif" font-size="11">Central Gujarat &#x2022; Terminal</text>
+  <text x="765" y="438" fill="#ffffff" font-family="Inter, sans-serif" font-size="18" font-weight="800">₹1,446.67 <tspan font-size="11" fill="#94a3b8">/Qtl</tspan></text>
+</svg>
