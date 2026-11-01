@@ -4,7 +4,8 @@ import {
   SavedSchedule, SavedScheduleCreate
 } from './types';
 
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8000/api/v1';
+const rawBase = (import.meta.env.VITE_API_URL || 'http://localhost:8000/api/v1').trim().replace(/\/+$/, '');
+const API_BASE = rawBase.endsWith('/api/v1') ? rawBase : `${rawBase}/api/v1`;
 
 export async function fetchHealth(): Promise<PipelineHealth> {
   try {

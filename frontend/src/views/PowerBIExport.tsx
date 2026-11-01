@@ -4,7 +4,8 @@ import {
   Layers, CheckCircle, ExternalLink, Table, BarChart3, Clock, Sparkles
 } from 'lucide-react';
 
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8000/api/v1';
+const rawBase = (import.meta.env.VITE_API_URL || 'http://localhost:8000/api/v1').trim().replace(/\/+$/, '');
+const API_BASE = rawBase.endsWith('/api/v1') ? rawBase : `${rawBase}/api/v1`;
 
 export const PowerBIExport: React.FC = () => {
   const downloadTable = (tableName: string) => {

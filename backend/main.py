@@ -58,6 +58,18 @@ app.add_middleware(
 )
 
 
+@app.get("/", tags=["Root"])
+def root():
+    """Root welcoming endpoint verifying API uptime."""
+    return {
+        "service": "CropShock API — Gujarat Agricultural Market Intelligence",
+        "status": "ONLINE",
+        "version": "1.0.0",
+        "docs_url": "/docs",
+        "health_check": "/api/v1/health"
+    }
+
+
 @app.get("/api/v1/health", response_model=PipelineHealthSchema, tags=["System Health"])
 def get_system_health(db: Session = Depends(get_db)):
     """Returns backend, database, and Hadoop HDFS health telemetry."""
