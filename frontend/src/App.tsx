@@ -196,11 +196,11 @@ const AppContent: React.FC = () => {
             <div className="view-title">
               {navItems.find(n => n.id === activeTab)?.label}
             </div>
-            <span className="badge badge-emerald">
+            <span className="badge badge-emerald topbar-badge-desktop">
               Gujarat 33 Districts Scope
             </span>
             {health?.hdfs_cluster_status && (
-              <span className="badge badge-indigo">
+              <span className="badge badge-indigo topbar-badge-secondary">
                 <HardDrive size={13} /> HDFS Parquet Lake
               </span>
             )}
@@ -208,11 +208,10 @@ const AppContent: React.FC = () => {
 
           <div className="topbar-right">
             {/* Quick Commodity Selector */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-              <span style={{ fontSize: '0.85rem', color: '#cbd5e1', fontWeight: 600 }}>Vegetable:</span>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+              <span style={{ fontSize: '0.82rem', color: '#94a3b8', fontWeight: 600, whiteSpace: 'nowrap' }}>Vegetable:</span>
               <select
-                className="select-control"
-                style={{ padding: '8px 14px', fontSize: '0.85rem' }}
+                className="select-control topbar-select"
                 value={selectedCommodityId}
                 onChange={(e) => setSelectedCommodityId(Number(e.target.value))}
               >
@@ -224,17 +223,17 @@ const AppContent: React.FC = () => {
               </select>
             </div>
 
-            <button className="btn btn-outline" style={{ padding: '8px 14px', fontSize: '0.85rem' }} onClick={loadData}>
-              <RefreshCw size={14} /> Refresh
+            <button className="btn btn-outline" style={{ padding: '7px 12px', fontSize: '0.82rem' }} onClick={loadData}>
+              <RefreshCw size={13} /> Refresh
             </button>
 
             <button 
               className="btn btn-outline" 
-              style={{ padding: '8px 14px', fontSize: '0.85rem', borderColor: 'rgba(255, 255, 255, 0.15)' }} 
+              style={{ padding: '7px 12px', fontSize: '0.82rem', borderColor: 'rgba(255, 255, 255, 0.15)' }} 
               onClick={logout}
               title="Return to Public Landing Page"
             >
-              <Home size={14} /> Exit to Home
+              <Home size={13} /> Exit
             </button>
 
             {/* User Profile / Login Button */}

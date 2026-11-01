@@ -35,27 +35,27 @@ export const WeatherChart: React.FC<WeatherChartProps> = ({ data, marketName }) 
 
   return (
     <div style={{ position: 'relative', width: '100%' }}>
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 12 }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 16, fontSize: '0.8rem' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 12, flexWrap: 'wrap', gap: 8 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 12, flexWrap: 'wrap', fontSize: '0.78rem' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
             <span style={{ width: 10, height: 10, background: 'rgba(16, 185, 129, 0.4)', borderRadius: 2 }}></span>
-            <span style={{ color: '#e2e8f0' }}>Arrival Volume (MT)</span>
+            <span style={{ color: '#e2e8f0' }}>Arrivals (MT)</span>
           </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
-            <span style={{ width: 12, height: 3, background: '#38bdf8', borderRadius: 2 }}></span>
-            <span style={{ color: '#e2e8f0' }}>3-Day Rainfall (mm)</span>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
+            <span style={{ width: 10, height: 3, background: '#38bdf8', borderRadius: 2 }}></span>
+            <span style={{ color: '#e2e8f0' }}>3D Rain (mm)</span>
           </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
-            <span style={{ width: 12, height: 2, background: '#f59e0b', strokeDasharray: '3 2' }}></span>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
+            <span style={{ width: 10, height: 2, background: '#f59e0b', strokeDasharray: '3 2' }}></span>
             <span style={{ color: '#e2e8f0' }}>Max Temp (°C)</span>
           </div>
         </div>
 
         {hoveredItem && (
-          <div style={{ fontSize: '0.85rem', color: '#38bdf8', fontWeight: 600 }}>
+          <div style={{ fontSize: '0.80rem', color: '#38bdf8', fontWeight: 600, background: 'rgba(56, 189, 248, 0.08)', padding: '2px 8px', borderRadius: 6, whiteSpace: 'nowrap' }}>
             {hoveredItem.date}: <span style={{ color: '#10b981' }}>{hoveredItem.arrival_quantity} MT</span> | 
-            <span style={{ color: '#38bdf8', marginLeft: 6 }}>Rain: {hoveredItem.recent_rainfall_3d_mm} mm</span> | 
-            <span style={{ color: '#f59e0b', marginLeft: 6 }}>Temp: {hoveredItem.temperature_max}°C</span>
+            <span style={{ color: '#38bdf8', marginLeft: 4 }}>Rain: {hoveredItem.recent_rainfall_3d_mm}mm</span> | 
+            <span style={{ color: '#f59e0b', marginLeft: 4 }}>Temp: {hoveredItem.temperature_max}°C</span>
           </div>
         )}
       </div>

@@ -51,14 +51,15 @@ export const UserProfileMenu: React.FC = () => {
         style={{
           display: 'flex',
           alignItems: 'center',
-          gap: 10,
+          gap: 9,
           background: 'rgba(255, 255, 255, 0.05)',
           border: '1px solid var(--border-subtle)',
           borderRadius: 30,
-          padding: '5px 14px 5px 6px',
+          padding: '4px 12px 4px 5px',
           cursor: 'pointer',
           color: '#fff',
-          transition: 'all 0.2s ease'
+          transition: 'all 0.2s ease',
+          flexShrink: 0
         }}
         onMouseEnter={(e) => {
           e.currentTarget.style.borderColor = 'rgba(16, 185, 129, 0.4)';
@@ -70,27 +71,32 @@ export const UserProfileMenu: React.FC = () => {
         }}
       >
         <div style={{
-          width: 32,
-          height: 32,
+          width: 30,
+          height: 30,
           borderRadius: '50%',
           background: 'linear-gradient(135deg, var(--emerald-500), #047857)',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
           fontWeight: 700,
-          fontSize: '0.82rem',
+          fontSize: '0.80rem',
           color: '#fff',
-          boxShadow: '0 0 10px var(--emerald-glow)'
+          boxShadow: '0 0 10px var(--emerald-glow)',
+          flexShrink: 0
         }}>
           {currentUser.initials}
         </div>
 
-        <div style={{ textAlign: 'left', lineHeight: 1.2 }}>
-          <div style={{ fontWeight: 600, fontSize: '0.86rem' }}>{currentUser.name}</div>
-          <div style={{ fontSize: '0.72rem', color: '#94a3b8' }}>{currentUser.roleLabel}</div>
+        <div style={{ textAlign: 'left', lineHeight: 1.2, maxWidth: '115px' }}>
+          <div style={{ fontWeight: 600, fontSize: '0.82rem', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+            {currentUser.name}
+          </div>
+          <div className="topbar-user-role" style={{ fontSize: '0.70rem', color: '#94a3b8', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+            {currentUser.roleLabel}
+          </div>
         </div>
 
-        <ChevronDown size={14} style={{ color: '#94a3b8', transform: isOpen ? 'rotate(180deg)' : 'none', transition: 'transform 0.2s' }} />
+        <ChevronDown size={13} style={{ color: '#94a3b8', transform: isOpen ? 'rotate(180deg)' : 'none', transition: 'transform 0.2s', flexShrink: 0 }} />
       </button>
 
       {/* Dropdown Menu */}

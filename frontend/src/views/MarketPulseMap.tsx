@@ -73,15 +73,15 @@ export const MarketPulseMap: React.FC<MarketPulseMapProps> = ({
       </div>
 
       {/* Main Grid: Gujarat Map + Selected Mandi Detail Drawer */}
-      <div style={{ display: 'grid', gridTemplateColumns: '1.35fr 1fr', gap: 28 }}>
+      <div className="map-detail-grid">
         {/* Gujarat Interactive Map Canvas */}
         <div className="glass-card" style={{ padding: '24px' }}>
-          <div className="card-header" style={{ marginBottom: 18 }}>
+          <div className="card-header" style={{ marginBottom: 18, flexWrap: 'wrap', gap: 10 }}>
             <div className="card-title">
-              <MapPin size={20} style={{ color: '#10b981' }} />
-              Statewide Gujarat APMC Mandi Network ({filteredMarkets.length} Yards)
+              <MapPin size={20} style={{ color: '#10b981', flexShrink: 0 }} />
+              <span>Statewide Gujarat APMC Mandi Network ({filteredMarkets.length} Yards)</span>
             </div>
-            <span style={{ fontSize: '0.86rem', color: '#94a3b8' }}>
+            <span style={{ fontSize: '0.86rem', color: '#94a3b8', whiteSpace: 'nowrap' }}>
               Showing {selectedCrop?.name || 'Vegetables'} Inflow
             </span>
           </div>

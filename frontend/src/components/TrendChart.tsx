@@ -40,26 +40,25 @@ export const TrendChart: React.FC<TrendChartProps> = ({ data, commodityName }) =
   return (
     <div style={{ position: 'relative', width: '100%' }}>
       {/* Chart Legend & Value Callout */}
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 12 }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 16, fontSize: '0.8rem' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
-            <span style={{ width: 12, height: 3, background: '#10b981', borderRadius: 2 }}></span>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 12, flexWrap: 'wrap', gap: 8 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 12, flexWrap: 'wrap', fontSize: '0.78rem' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
+            <span style={{ width: 10, height: 3, background: '#10b981', borderRadius: 2 }}></span>
             <span style={{ color: '#e2e8f0' }}>Modal Price</span>
           </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
-            <span style={{ width: 12, height: 2, background: '#f59e0b', strokeDasharray: '3 2' }}></span>
-            <span style={{ color: '#e2e8f0' }}>7-Day MA Baseline</span>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
+            <span style={{ width: 10, height: 2, background: '#f59e0b', strokeDasharray: '3 2' }}></span>
+            <span style={{ color: '#e2e8f0' }}>7-Day MA</span>
           </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
-            <span style={{ width: 12, height: 10, background: 'rgba(16, 185, 129, 0.15)', borderRadius: 2 }}></span>
-            <span style={{ color: '#94a3b8' }}>Min-Max Price Spread</span>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
+            <span style={{ width: 10, height: 8, background: 'rgba(16, 185, 129, 0.2)', borderRadius: 2 }}></span>
+            <span style={{ color: '#94a3b8' }}>Spread Band</span>
           </div>
         </div>
 
         {hoveredItem && (
-          <div style={{ fontSize: '0.85rem', color: '#10b981', fontWeight: 700 }}>
-            {hoveredItem.date}: <span style={{ color: '#fff' }}>₹{hoveredItem.modal_price.toLocaleString()}</span> / Qtl
-            <span style={{ color: '#94a3b8', marginLeft: 8 }}>(Spread: ₹{hoveredItem.price_spread})</span>
+          <div style={{ fontSize: '0.80rem', color: '#34d399', fontWeight: 600, background: 'rgba(16, 185, 129, 0.1)', padding: '2px 8px', borderRadius: 6, whiteSpace: 'nowrap' }}>
+            {hoveredItem.date}: <strong style={{ color: '#fff' }}>₹{hoveredItem.modal_price.toLocaleString()}</strong>/Qtl
           </div>
         )}
       </div>
